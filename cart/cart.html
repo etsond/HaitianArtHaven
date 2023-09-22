@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shopping Cart - HaitianArt Haven</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your Shopping Cart</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../product/products.html">Products</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cart">
+      <h2>Cart Contents</h2>
+
+      <!-- TODO -->
+      <!-- Dynamically genereate cart items from artists data -->
+      <div class="cart-item">
+        <img src="painting1.jpg" alt="Haitian Painting 1" />
+        <div class="cart-item-details">
+          <h3>Haitian Painting 1</h3>
+          <p>Artist: Jean Baptiste</p>
+          <p>Price: $199.99</p>
+        </div>
+        <div class="cart-item-price">$199.99</div>
+        <div class="cart-item-controls">
+          <button class="delete-button" onclick="deleteCartItem(this)">
+            Delete
+          </button>
+          <a class="add-more-button" href="../product/products.html"
+            >Add More</a
+          >
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="sculpture1.jpg" alt="Haitian Sculpture 1" />
+        <div class="cart-item-details">
+          <h3>Haitian Sculpture 1</h3>
+          <p>Artist: Marie Pierre</p>
+          <p>Price: $149.99</p>
+        </div>
+        <div class="cart-item-price">$149.99</div>
+        <div class="cart-item-controls">
+          <button class="delete-button" onclick="deleteCartItem(this)">
+            Delete
+          </button>
+          <a class="add-more-button" href="../product/products.html"
+            >Add More</a
+          >
+        </div>
+      </div>
+
+      <div class="cart-total">
+        <p>Total: $349.98</p>
+      </div>
+
+      <a href="../checkout/checkout.html" class="checkout-button"
+        >Proceed to Checkout</a
+      >
+    </section>
+  </body>
+</html>

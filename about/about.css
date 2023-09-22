@@ -1,0 +1,83 @@
+/* Styles for the About page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.about-content ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Styles for the contact details */
+.about-content ul li {
+    margin-bottom: 10px;
+}
+
+.about-content ul li:last-child {
+    margin-bottom: 0;
+}
+/* Responsive Styles */
+
+/* Adjust the max-width and padding for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Increase font size for smaller screens */
+@media screen and (max-width: 480px) {
+    .about-content {
+        font-size: 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+}

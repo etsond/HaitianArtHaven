@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - HaitianArt Haven</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <section class="checkout">
+      <h2>Your Cart</h2>
+      <ul id="checkout-items">
+        <!-- Cart items will be added here -->
+      </ul>
+      <p>Total: $<span id="checkout-total">0.00</span></p>
+
+      <h2>Payment Information</h2>
+      <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" required />
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" required />
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required />
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My E-commerce Store</p>
+    </footer>
+  </body>
+</html>
